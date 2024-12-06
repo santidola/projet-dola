@@ -23,4 +23,11 @@ export class AuthController {
         }
     }
 
+    @Post("password")
+    cambiouser(@Body(){username, password}: {username: string, password: string}){
+        const mensaje = this.authService. cambiarPassword(username, password);
+
+        return { message: mensaje };
+    }
+
 }
