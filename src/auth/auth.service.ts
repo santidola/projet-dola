@@ -7,7 +7,13 @@ export class AuthService {
 
 
     // Arreglo para almacenar los usuarios
-    usuar = [];
+    usuar = [{
+        nombre: "1013339909",
+        apellido: "castaño",
+        password: "123456",
+        correo: "harold@gmail.com",
+        cel: 3006397804
+    }];
 
     // creo el metodo con los parametros y los defino : defino q tipado me va a retornar (int, string)
     registro(username: string, password: string, apellido: string, correo: string, cel: number): string {
